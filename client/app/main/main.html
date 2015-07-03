@@ -1,0 +1,30 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+  <div class="row">
+    <div class="col-md-10">
+      <ui-gmap-google-map  center='map.center' zoom='map.zoom'>
+        <ui-gmap-polyline ng-repeat="polyline in polylines" path='polyline.path' stroke='polyline.stroke' draggable='polyline.draggable' editable='polyline.editable' geodesic='polyline.geodesic' visible='polyline.visible'>
+        </ui-gmap-polylin
+        e>
+        <ui-gmap-marker idKey='1'  coords='maps[0].center'>
+        </ui-gmap-marker>
+        <ui-gmap-marker idKey='2'  coords='maps[maps.length-1].center'>
+        </ui-gmap-marker>
+        
+      </ui-gmap-google-map>
+    </div>
+    <div class="col-md-2" ng-show="maps.length>0">
+      <h4>Location</h4>
+      <p>Lat {{maps[maps.length-1].center.latitude}}</p>
+      <p>Lng {{maps[maps.length-1].center.longitude}}</p>
+      <h4>Speed</h4>
+      <p>{{maps[maps.length-1].meta.speed}}</p>
+      <h4>Timestamp</h4>
+      <p>{{maps[maps.length-1].meta.timestamp}}</p>
+    </div>
+      
+  </div>
+
+  
+  
+
