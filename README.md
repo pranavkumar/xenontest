@@ -34,7 +34,26 @@ $ grunt serve
 $ cd vehicleclient
 $ node index
 </pre>
+<p>Expected output</p>
+<pre>
+11 packets
+Connected...
+we gonna send 11 packets
+Received: XenonTCP
 
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Received: ACK1
+Connection closed
+</pre>
 
 
 
