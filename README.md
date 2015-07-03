@@ -9,5 +9,8 @@ in order to install Node and npm.</p>
 
 <pre>$ npm install -g bower</pre>
 
-<h3>Clone the repository</h3>
+<h3>Clone the repository and install dependencies</h3>
+
+
+
 
