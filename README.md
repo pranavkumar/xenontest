@@ -11,4 +11,3 @@ in order to install Node and npm.</p>
 
 <h3>Clone the repository</h3>
 
-<pre>$ git clone </pre>
